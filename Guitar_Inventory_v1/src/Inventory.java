@@ -28,7 +28,7 @@ public class Inventory {
 		for (Iterator i = guitars.iterator(); i.hasNext();) {
 			Guitar guitar = (Guitar) i.next();
 			// >> lets take a look to the beauty of the code
-			if (searchGuitar.getGuitarSpec().matches(guitar.getGuitarSpec()))
+			if (searchGuitar.getGuitarSpec().equals(guitar.getGuitarSpec()))
 				matchedGuitars.add(guitar);
 		}
 		return matchedGuitars;

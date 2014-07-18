@@ -16,7 +16,7 @@ public class GuitarSpec {
 		this.model = model;
 	}
 
-	public boolean matches(GuitarSpec otherSpec) {
+	public boolean equals(GuitarSpec otherSpec) {
 		if (this.builder != otherSpec.builder)
 			return false;
 		else if ((model != null) && (!model.equals(""))
