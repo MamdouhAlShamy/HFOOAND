@@ -25,14 +25,11 @@ public class Inventory {
 
 	public List search(Guitar searchGuitar) {
 		List<Guitar> matchedGuitars = new LinkedList();
-		;
 		for (Iterator i = guitars.iterator(); i.hasNext();) {
 			Guitar guitar = (Guitar) i.next();
 			// >> lets take a look to the beauty of the code
-			if (searchGuitar.getGuitarSpec().equals(guitar.getGuitarSpec()))
-				continue;
-
-			matchedGuitars.add(guitar);
+			if (searchGuitar.getGuitarSpec().matches(guitar.getGuitarSpec()))
+				matchedGuitars.add(guitar);
 		}
 		return matchedGuitars;
 	}
