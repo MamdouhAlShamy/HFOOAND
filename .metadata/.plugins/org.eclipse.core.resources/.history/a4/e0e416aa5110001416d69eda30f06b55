@@ -1,0 +1,23 @@
+package com.hfooad.remoteControlled.dogdoor;
+
+public class DogDoorSimulator {
+	public static void main(String[] args)
+	{
+		DogDoor door = new DogDoor();
+		Remote remote = new Remote(door);
+		System.out.println("Fido barks to go outside ..");
+		remote.pressButton();
+		System.out.println("\nFido has gone outside..");
+//		remote.pressButton();
+		System.out.println("\nFido's all done..");
+		
+		try{
+			Thread.currentThread().wait(1000);
+		}
+		catch(InterruptedException){}
+		
+//		remote.pressButton();
+		System.out.println("\nFide's back inside..");
+		//remote.pressButton();
+	}
+}

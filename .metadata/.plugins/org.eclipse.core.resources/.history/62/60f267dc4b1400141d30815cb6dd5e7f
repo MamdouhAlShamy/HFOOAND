@@ -1,0 +1,15 @@
+package com.hfooad.remoteControlled.dogdoor;
+
+public class Bark {
+	private String sound;
+	
+	public String getSound()
+	{
+		
+	}
+	
+	public boolean equals(Bark bark)
+	{
+		
+	}
+}

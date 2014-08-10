@@ -23,15 +23,5 @@ public class Remote {
 		{
 			door.open();
 		}
-		
-		final Timer timer = new Timer();
-		timer.schedule(new TimerTask() {
-			
-			@Override
-			public void run() {
-				door.close();
-				timer.cancel();
-			}
-		}, 5000);
 	}
 }

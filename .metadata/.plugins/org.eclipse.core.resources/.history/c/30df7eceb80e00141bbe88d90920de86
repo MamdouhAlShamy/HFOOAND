@@ -1,0 +1,5 @@
+package com.hfooad.remoteControlled.dogdoor;
+
+public class DogDoorSimulator {
+
+}
